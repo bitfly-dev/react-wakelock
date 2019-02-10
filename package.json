@@ -1,22 +1,21 @@
 {
-  "name": "react-wakelock",
-  "version": "0.0.4",
-  "description": "a React component that keeps the browser/smartphone awake (aka. \"no sleep\")",
+  "name": "react-wakelock-react16",
+  "version": "0.0.5",
+  "description": "A React component that keeps the browser/smartphone awake (aka. \"no sleep\"). Updated to work with React16",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jampy/react-wakelock.git"
+    "url": "git+https://github.com/thedustyrover/react-wakelock.git"
   },
   "bugs": {
-    "url": "https://github.com/jampy/react-wakelock/issues"
+    "url": "https://github.com/thedustyrover/react-wakelock/issues"
   },
-  "homepage": "https://github.com/jampy/react-wakelock#readme",
+  "homepage": "https://github.com/thedustyrover/react-wakelock#readme",
   "main": "./dist/index.js",
   "dependencies": {
     "prop-types": "^15.6.0",
     "create-react-class": "^15.6.0"
   },
-  "peerDependencies": {
-  },
+  "peerDependencies": {},
   "devDependencies": {
     "babel-cli": "^6.18.0",
     "babel-plugin-transform-runtime": "^6.15.0",
