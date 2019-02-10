@@ -12,13 +12,13 @@ awake - especially for mobile devices.
 ## Installation
 
 ```
-npm i --save react-wakelock
+npm i --save react-wakelock-react16
 ```
 
 ## How to use (READ THIS! IMPORTANT!) 
 
 ```javascript
-import WakeLock from 'react-wakelock';
+import WakeLock from 'react-wakelock-react16';
 
 
 render() {
