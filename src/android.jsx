@@ -38,10 +38,24 @@ let WakeLockAndroid = createReactClass({
     // Create a <video> tag that plays a blank/dummy in a loop.
     // It's not necessary to *add* the tag to the document.
     this.dummyVideo = document.createElement('video');
-    this.dummyVideo.setAttribute("loop", "");
+    this.dummyVideo.setAttribute('muted', '')
+    this.dummyVideo.setAttribute('title', 'No Sleep');
+    this.dummyVideo.setAttribute('playsinline', '');
 
     addSourceToVideo(this.dummyVideo, "webm", media.WebM);
     addSourceToVideo(this.dummyVideo, "mp4", media.MP4);
+
+    this.dummyVideo.addEventListener('loadedmetadata', () => {
+      if (this.dummyVideo.duration <= 1) { // webm source
+        this.dummyVideo.setAttribute('loop', '')
+      } else { // mp4 source
+        this.dummyVideo.addEventListener('timeupdate', () => {
+          if (this.dummyVideo.currentTime > 0.5) {
+            this.dummyVideo.currentTime = Math.random()
+          }
+        })
+      }
+    })
 
     this.syncState(this.props.preventSleep);
   },

@@ -1,6 +1,6 @@
 {
   "name": "react-wakelock-react16",
-  "version": "0.0.7",
+  "version": "0.0.1",
   "description": "A React component that keeps the browser/smartphone awake (aka. \"no sleep\"). Updated to work with React16",
   "repository": {
     "type": "git",
